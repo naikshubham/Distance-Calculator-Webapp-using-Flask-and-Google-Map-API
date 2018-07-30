@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+
+<p>Your search results</p>
+<table>
+<tr><td>Source:</td><td>{{ the_source }}</td></tr>
+<tr><td>Destination:</td><td>{{ the_dest }}</td></tr>
+</table>
+<p>Distance between "{{ the_source }}" and "{{ the_dest }}" is "{{ the_dist }}" ,and time to reach from "{{ the_source }}" to "{{ the_dest }}" is "{{ the_time }}"</p>
+<h3>Happy Journey</h3>
+
+{% endblock %}
+

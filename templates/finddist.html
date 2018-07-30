@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<!--<h2>{{ the_title }}</h2>-->
+
+<form method='POST' action='/result'>
+<table>
+<h3>DISTANCE CALCULATOR Ⓒ PYTHON and GOOGLEMAPS</p>
+<p>Enter Source and Destination between which the distance and time needs to be calculated</p>
+<tr><td>Source:</td><td><input name='source' type='TEXT' width='60'></td></tr>
+</table>
+<table>
+<tr><td>Destination:</td><td><input name='destination' type='TEXT'></td></tr>
+</table>
+<p>When you're done click this button:</p>
+<p><input value='Search!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
